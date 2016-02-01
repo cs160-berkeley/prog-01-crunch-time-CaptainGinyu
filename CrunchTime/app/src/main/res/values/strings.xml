@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Calorie Killer</string>
+    <string-array name="modes">
+        <item>calories to burn</item>
+        <item>reps/minute</item>
+    </string-array>
 </resources>

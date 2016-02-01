@@ -18,23 +18,27 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:gravity="center" />
+        android:gravity="center"
+        android:paddingBottom="20dp" />
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="123dp"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:ems="10"
-        android:id="@+id/editText"
+        android:id="@+id/numberInputField"
         android:layout_below="@+id/textView"
+        android:text=""
         android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
 
     <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/spinner"
-        android:layout_alignTop="@+id/editText"
+        android:id="@+id/modeSelector"
+        android:layout_alignBottom="@+id/numberInputField"
         android:layout_alignParentEnd="true"
-        android:layout_toEndOf="@+id/editText" />
+        android:layout_toEndOf="@+id/numberInputField" />
 </RelativeLayout>
