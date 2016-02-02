@@ -7,38 +7,45 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="crunchtime.cs160.com.crunchtime.Main">
+    tools:context="crunchtime.cs160.com.crunchtime.Main"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:clickable="true">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/app_name"
-        android:id="@+id/textView"
+        android:id="@+id/title"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:gravity="center"
-        android:paddingBottom="20dp" />
+        android:paddingBottom="20dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
 
     <EditText
-        android:layout_width="123dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:ems="10"
         android:id="@+id/numberInputField"
-        android:layout_below="@+id/textView"
-        android:text=""
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp"
         android:focusable="true"
-        android:focusableInTouchMode="true" />
+        android:focusableInTouchMode="true"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:clickable="true" />
 
     <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/modeSelector"
-        android:layout_alignBottom="@+id/numberInputField"
-        android:layout_alignParentEnd="true"
-        android:layout_toEndOf="@+id/numberInputField" />
+        android:layout_alignParentStart="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/numberInputField" />
+
 </RelativeLayout>

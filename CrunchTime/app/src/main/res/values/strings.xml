@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Calorie Killer</string>
     <string-array name="modes">
-        <item>calories to burn</item>
-        <item>reps/minute</item>
+        <item>Exercise amount to calories</item>
+        <item>Calories to exercise amount</item>
     </string-array>
 </resources>
