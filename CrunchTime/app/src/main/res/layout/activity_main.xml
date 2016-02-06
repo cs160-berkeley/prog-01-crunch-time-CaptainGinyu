@@ -22,30 +22,111 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:gravity="center"
-        android:paddingBottom="20dp"
         android:clickable="false"
         android:focusable="false"
         android:focusableInTouchMode="false" />
 
-    <EditText
-        android:layout_width="wrap_content"
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:ems="10"
-        android:id="@+id/numberInputField"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:layout_below="@+id/title"
+        android:id="@+id/scrollView"
         android:layout_centerHorizontal="true"
-        android:clickable="true" />
+        android:layout_below="@+id/title"
+        android:layout_alignParentBottom="true"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:clickable="true">
 
-    <Spinner
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/modeSelector"
-        android:layout_alignParentStart="false"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/numberInputField" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/modeSelector"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/unitsText" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/convert_button_text"
+                android:id="@+id/convertButton"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="true"
+                android:layout_below="@+id/exerciseSelect"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/exercise_select_prompt"
+                android:id="@+id/exerciseSelectPrompt"
+                android:visibility="visible"
+                android:layout_below="@+id/modeSelector"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/exerciseSelect"
+                android:layout_below="@+id/exerciseSelectPrompt"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@+id/modeSelector"
+                android:visibility="visible" />
+
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/numberInputField"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:clickable="true"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/unitsText"
+                android:text="units"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentStart="false"
+                android:layout_below="@+id/numberInputField"
+                android:layout_centerHorizontal="true" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/convertButton"
+                android:id="@+id/space"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Results will be displayed here after pressing the Convert button"
+                android:layout_below="@+id/space"
+                android:id="@+id/results"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+    </ScrollView>
 
 </RelativeLayout>

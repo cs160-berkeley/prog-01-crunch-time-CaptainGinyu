@@ -1,7 +1,23 @@
 <resources>
     <string name="app_name">Calorie Killer</string>
+    <string name="convert_button_text">Convert</string>
+    <string name="exercise_select_prompt">Select an exercise:</string>
     <string-array name="modes">
         <item>Exercise amount to calories</item>
         <item>Calories to exercise amount</item>
+    </string-array>
+    <string-array name="exercises">
+        <item>push-ups</item>
+        <item>sit-ups</item>
+        <item>squats</item>
+        <item>leg-lifting</item>
+        <item>planking</item>
+        <item>jumping jacks</item>
+        <item>pull-ups</item>
+        <item>cycling</item>
+        <item>walking</item>
+        <item>jogging</item>
+        <item>swimming</item>
+        <item>stair-climbing</item>
     </string-array>
 </resources>
