@@ -39,4 +39,4 @@ Kevin Chow ([kvn_chow@berkeley.edu](mailto:kvn_chow@berkeley.edu))
 
 ## Demo Video
 
-See [your demo video title here] (https://link_to_your_video)
+See [Berkeley CS 160 first project] (https://vimeo.com/154397132)
