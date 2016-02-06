@@ -30,6 +30,8 @@ If you are in **Calories to exercise amount** mode, you will see something like 
 
 As you may have noticed, the units (reps, minutes, or calories burned) change depending on what is selected.
 
+And by the way, here's what the app looks like in landscape orientation.
+
 ![Landscape orientation](/images/7.png)
 
 
